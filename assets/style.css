@@ -1,0 +1,204 @@
+/******* CSS **********/
+
+
+
+/******* NAVBAR *******/
+.nav-item{
+    display: inline-block;
+    
+}
+
+.nav-item-words{
+    font-size: 1.5em;
+    list-style: none;
+    color: #777;
+    
+    /************************************************  TESTING PSEUDO Z INDEX ABSOLUTE POSITIONING 
+    border-left: solid 1px #777;                       
+    ************************************************/  
+    
+    position: relative;
+    z-index : 1;
+}
+
+
+#left-nav-item{
+    border: none;
+}
+
+#nav-row{
+    height: 85px;
+    background-color: white;
+    border-bottom: solid 1px grey;
+}
+
+
+#name{
+    margin: auto;
+    color:white;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+#name-con{
+    width:200px;
+    height:85px;
+    background-color:#4aaaa5;
+    text-align:center;
+    display: flex;
+    align-items: center;
+}
+
+#right-nav-link{
+    padding-right: 0px;
+}
+
+#right-nav-section{
+    padding-right: 0px;
+}
+
+/*** VERTICAL BARS BETWEEN NAV ELEMENTS ***/
+
+.nav-item-words:before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  top  : 35%;
+  height  : 40%;
+    
+  border-left:2px solid #777;
+}
+
+#left-nav-item:before{
+    border-left:none;
+}
+
+
+
+
+
+/******** Main Content Section ********/
+
+#main-section-container{
+    background-image: url(Images/ep_naturalwhite.png);
+    min-height: 650px;
+}
+
+
+
+
+/******** Left Main Section Content Container ********/
+
+#left-content-container{
+    background-color: white;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 8%;
+    border: 1px solid #777;
+}
+
+.container-title{
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    
+}
+
+#my-img{
+    float: left;
+    height: 200px;
+    width: 160px;
+    margin: 10px 30px 10px 0px;
+    
+}
+
+
+
+/******** Right Main Section Content Container ********/
+
+#right-content-container{
+    background-color: white;
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #777;
+}
+
+.container-header{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;;
+    
+}
+
+/******** Portfolio Section ********/
+
+.image-div{
+    display: inline-block;
+    height: 33%;
+    width: 40%;
+    margin: 3%;
+    margin-left: 5.5%;
+    position: relative;
+}
+
+.port-img{
+    height: 240px;
+    width: 160px;
+    display: inline-block;
+}
+
+.port-img:nth-child(odd) {
+    margin-left: 70px;
+}
+
+.port-img-title{
+     position: absolute;
+     display: block;
+     bottom: 10px;
+     left: 0px;
+     width: 100%;
+     background-color:#4aaaa5;
+     font-size: 1.25em;
+     font-family: 'Georgia', Times, Times New Roman, serif;
+     text-align: center;
+     
+}
+
+/****** Footer ******/
+
+#footer{
+    height:85px;
+    background-color: #777;
+    border-top: solid 2px #4aaaa5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+
+
+/****** Misc ******/
+
+hr{
+    border-color: #777777;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.main-text{
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 1.40em;
+    line-height: 125%;
+    
+}
+
+@media screen and (max-width:763px) {
+    #navbarNav{
+        background-color: white;
+        color: black;
+    }
+    #left-content-container{
+        margin-top: 10%;
+    }
+    
+    
+}
